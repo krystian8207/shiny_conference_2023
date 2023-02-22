@@ -1,0 +1,36 @@
+.survey-container {
+  border: 5px solid #280144;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #dbaaff0f;
+}
+.survey-container > .survey-title,
+.survey-container > div,
+.pick-checkbox > div,
+.survey-container > button {
+  margin: auto;
+  text-align: center;
+}
+
+.survey-container > button {
+  display: block;
+}
+
+.survey-container > .survey-title, .survey-container > .survey-submit {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.survey-container > hr:first-of-type {
+  margin-top: 0;
+}
+
+.survey-container > hr:last-of-type {
+  margin-bottom: 0;
+}
+
+.submitted {
+  text-align: center;
+}
