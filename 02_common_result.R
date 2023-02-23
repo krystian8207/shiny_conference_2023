@@ -24,7 +24,7 @@ ui <- fluidPage(
       commonInput(
         "result",
         checkboxGroupInput(
-          "fav_topics", "Which topics where you interested in the most (choose max two)",
+          "fav_topics", "Which topics were you interested in the most (choose max two)",
           choices = c(
             "Shiny in life science", "Shiny 4 Good", "Learning Communities", "Shiny Modules",
             "Best Practices", "Shiny + Javascript", "Shiny in Business", "Shiny in Local Governments"
@@ -62,7 +62,6 @@ ui <- fluidPage(
     style = "display: none;"
   )
 )
-
 
 server <- function(input, output, session) {
   observeEvent(input$comment_modal, {

@@ -6,9 +6,9 @@ ui <- fluidPage(
   sliderInput("value", "Value", min = 1, max = 10, value = 1),
   hr(),
   conditionalJS(
-    tags$button("I'm visible when value at least 2"),
-    "input.value >= 2",
-    jsCalls$show()
+    ui = tags$button("I'm visible when value at least 2"),
+    condition = "input.value >= 2",
+    jsCall = jsCalls$show()
   ),
   hr(),
   conditionalJS(

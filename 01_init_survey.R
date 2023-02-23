@@ -16,7 +16,7 @@ ui <- fluidPage(
       radioButtons("rating", "How did you like shinyConf2023?", choices = 1:10, selected = "", inline = TRUE),
       hr(),
       checkboxGroupInput(
-        "fav_topics", "Which topics where you interested in the most (choose max two)",
+        "fav_topics", "Which topics were you interested in the most (choose max two)",
         choices = c(
           "Shiny in life science", "Shiny 4 Good", "Learning Communities", "Shiny Modules",
           "Best Practices", "Shiny + Javascript", "Shiny in Business", "Shiny in Local Governments"
